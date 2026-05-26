@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Surbhi Sharma, React Native and NetSuite Developer based in Indore."
-    />
-    <title>Surbhi Sharma | React Native & NetSuite Developer</title>
+    <meta name="description" content="Premium Portfolio of Surbhi Sharma, React Native and NetSuite Developer." />
+    <title>Surbhi Sharma | Creative Engineer Portfolio</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-glow" aria-hidden="true"></div>
+    <div class="ambient-blur-1"></div>
+    <div class="ambient-blur-2"></div>
+
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Surbhi Sharma home">
         <span class="brand-mark">SS</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
         <span></span>
         <span></span>
       </button>
@@ -27,20 +28,22 @@
         <a href="#skills">Skills</a>
         <a href="#certifications">Certificates</a>
         <a href="#experience">Experience</a>
-        <a href="#case-studies">Case Studies</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="contact-trigger">Contact</a>
       </nav>
     </header>
 
     <main id="home">
-      <section class="hero section reveal">
+      <section class="hero section reveal visible">
         <div class="hero-copy">
+          <div class="badge-container">
+            <span class="status-badge"><span class="pulse-dot"></span> Open to Global Opportunities</span>
+          </div>
           <p class="hero-kicker">Hi, I'm</p>
           <h1><span>Surbhi</span><span>Sharma</span></h1>
-          <p class="role-line" data-roles="React Native Developer|NetSuite Developer|Mobile App Engineer">
-            React Native Developer
-          </p>
+          <div class="dynamic-role-wrapper">
+            <p class="role-line">React Native Developer</p>
+          </div>
           <p class="hero-text">
             Results-driven React Native Developer with 5 years of experience building,
             scaling, and deploying cross-platform Android and iOS applications. Skilled in
@@ -48,18 +51,17 @@
             Firebase, secure integrations, and NetSuite ERP solutions.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="mailto:subhis9009@gmail.com">Contact Me</a>
-            <a class="button ghost" href="SurbhiSharma_Resume_26_May.pdf" download>Download Resume</a>
-          </div>
-          <div class="social-row" aria-label="Contact links">
-            <a href="mailto:subhis9009@gmail.com" aria-label="Email">Mail</a>
-            <a href="tel:7987971008" aria-label="Phone">Call</a>
-            <a href="https://www.linkedin.com/in/surbhi-sharma-930440177" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+            <a class="button primary" href="#projects">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="button secondary" href="#contact">Get In Touch</a>
+            <a class="button ghost" href="SurbhiSharma_Resume_26_May.pdf" download>Download CV</a>
           </div>
         </div>
 
         <div class="hero-orbit" aria-label="Surbhi Sharma profile highlights">
+          <div class="profile-card-glow-layer"></div>
           <div class="profile-card">
             <img class="profile-photo" src="assets/surbhi-profile.jpg" alt="Surbhi Sharma" />
           </div>
@@ -67,24 +69,24 @@
           <span class="chip chip-two">TypeScript</span>
           <span class="chip chip-three">Firebase</span>
           <span class="chip chip-four">SuiteScript</span>
-          <span class="chip chip-five">5 Years</span>
-          <span class="chip chip-six">CI/CD</span>
+          <span class="chip chip-five">5+ Years Exp</span>
+          <span class="chip chip-six">CI/CD Pipeline</span>
         </div>
 
         <div class="stats hero-stats" aria-label="Portfolio statistics">
-          <div>
+          <div class="stat-box">
             <strong>5 Years</strong>
             <span>Experience</span>
           </div>
-          <div>
+          <div class="stat-box">
             <strong>14+</strong>
             <span>Projects Delivered</span>
           </div>
-          <div>
+          <div class="stat-box">
             <strong>4</strong>
             <span>Companies</span>
           </div>
-          <div>
+          <div class="stat-box">
             <strong>4</strong>
             <span>Certifications</span>
           </div>
@@ -119,31 +121,31 @@
               </article>
               <article>
                 <span>Available For</span>
-                <strong>Full-time, Remote & Hybrid</strong>
+                <strong>Full-time, Remote</strong>
               </article>
               <article>
                 <span>Focus</span>
-                <strong>Android, iOS, NetSuite</strong>
+                <strong>Android, iOS, ERP</strong>
               </article>
             </div>
           </div>
           <div class="tech-cloud" aria-label="Technologies Surbhi works with">
-            <span>React Native</span>
-            <span>TypeScript</span>
-            <span>JavaScript</span>
-            <span>Redux Toolkit</span>
-            <span>RTK Query</span>
-            <span>Firebase</span>
-            <span>SuiteScript 2.x</span>
-            <span>REST APIs</span>
-            <span>GraphQL</span>
-            <span>WebSocket</span>
-            <span>Android</span>
-            <span>iOS</span>
-            <span>CI/CD</span>
-            <span>Crashlytics</span>
-            <span>Mapbox</span>
-            <span>Jest</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Redux Toolkit</span>
+            <span class="tech-tag">RTK Query</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">SuiteScript 2.x</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">GraphQL</span>
+            <span class="tech-tag">WebSocket</span>
+            <span class="tech-tag">Android Native</span>
+            <span class="tech-tag">iOS Engineering</span>
+            <span class="tech-tag">CI/CD Automation</span>
+            <span class="tech-tag">Crashlytics</span>
+            <span class="tech-tag">Mapbox UI</span>
+            <span class="tech-tag">Jest Testing</span>
           </div>
         </div>
       </section>
@@ -152,66 +154,38 @@
         <div class="section-title centered">
           <p>Skills</p>
           <h2>My Expertise</h2>
-          <span>Technologies and tools I use to build reliable products</span>
+          <span>Modern workflows and tools I use to scale business infrastructure</span>
         </div>
         <div class="skill-marquee" aria-hidden="true">
-          <div>
-            <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>NetSuite</span><span>CI/CD</span><span>Redux</span>
-            <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>NetSuite</span><span>CI/CD</span><span>Redux</span>
+          <div class="marquee-inner">
+            <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>NetSuite ERP</span><span>CI/CD</span><span>Redux Toolkit</span><span>GraphQL</span><span>SuiteScript 2.x</span>
+            <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>NetSuite ERP</span><span>CI/CD</span><span>Redux Toolkit</span><span>GraphQL</span><span>SuiteScript 2.x</span>
           </div>
         </div>
-        <div class="skill-tabs" aria-label="Skill categories">
-          <button class="skill-tab active" type="button" data-skill="mobile">Mobile</button>
-          <button class="skill-tab" type="button" data-skill="data">State & Data</button>
-          <button class="skill-tab" type="button" data-skill="erp">ERP</button>
-          <button class="skill-tab" type="button" data-skill="cloud">Cloud</button>
-          <button class="skill-tab" type="button" data-skill="quality">Quality</button>
-        </div>
         <div class="skill-panel">
-          <article class="skill-meter" data-skill-card="mobile">
-            <h3>React Native</h3><strong>96%</strong><span><i style="width: 96%"></i></span><p>Expert</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>React Native Ecosystem</h3><strong>96%</strong></div>
+            <span><i style="width: 96%"></i></span>
           </article>
-          <article class="skill-meter" data-skill-card="mobile">
-            <h3>Android</h3><strong>90%</strong><span><i style="width: 90%"></i></span><p>Expert</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>Cross-Platform Android</h3><strong>90%</strong></div>
+            <span><i style="width: 90%"></i></span>
           </article>
-          <article class="skill-meter" data-skill-card="mobile">
-            <h3>iOS</h3><strong>86%</strong><span><i style="width: 86%"></i></span><p>Advanced</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>iOS Native Integration</h3><strong>86%</strong></div>
+            <span><i style="width: 86%"></i></span>
           </article>
-          <article class="skill-meter" data-skill-card="data">
-            <h3>Redux Toolkit</h3><strong>92%</strong><span><i style="width: 92%"></i></span><p>Expert</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>State Management (Redux/RTK)</h3><strong>92%</strong></div>
+            <span><i style="width: 92%"></i></span>
           </article>
-          <article class="skill-meter" data-skill-card="data">
-            <h3>REST / GraphQL</h3><strong>90%</strong><span><i style="width: 90%"></i></span><p>Expert</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>SuiteScript 2.x Architecture</h3><strong>88%</strong></div>
+            <span><i style="width: 88%"></i></span>
           </article>
-          <article class="skill-meter" data-skill-card="data">
-            <h3>WebSocket</h3><strong>84%</strong><span><i style="width: 84%"></i></span><p>Advanced</p>
-          </article>
-          <article class="skill-meter" data-skill-card="erp">
-            <h3>SuiteScript 2.x</h3><strong>88%</strong><span><i style="width: 88%"></i></span><p>Advanced</p>
-          </article>
-          <article class="skill-meter" data-skill-card="erp">
-            <h3>Workflows</h3><strong>90%</strong><span><i style="width: 90%"></i></span><p>Expert</p>
-          </article>
-          <article class="skill-meter" data-skill-card="erp">
-            <h3>Bank Integrations</h3><strong>84%</strong><span><i style="width: 84%"></i></span><p>Advanced</p>
-          </article>
-          <article class="skill-meter" data-skill-card="cloud">
-            <h3>Firebase</h3><strong>92%</strong><span><i style="width: 92%"></i></span><p>Expert</p>
-          </article>
-          <article class="skill-meter" data-skill-card="cloud">
-            <h3>Google Cloud</h3><strong>78%</strong><span><i style="width: 78%"></i></span><p>Strong</p>
-          </article>
-          <article class="skill-meter" data-skill-card="cloud">
-            <h3>Push Notifications</h3><strong>88%</strong><span><i style="width: 88%"></i></span><p>Advanced</p>
-          </article>
-          <article class="skill-meter" data-skill-card="quality">
-            <h3>CI/CD</h3><strong>86%</strong><span><i style="width: 86%"></i></span><p>Advanced</p>
-          </article>
-          <article class="skill-meter" data-skill-card="quality">
-            <h3>Jest / Detox</h3><strong>80%</strong><span><i style="width: 80%"></i></span><p>Strong</p>
-          </article>
-          <article class="skill-meter" data-skill-card="quality">
-            <h3>Crashlytics</h3><strong>88%</strong><span><i style="width: 88%"></i></span><p>Advanced</p>
+          <article class="skill-meter">
+            <div class="skill-info"><h3>Cloud Infrastructure & Firebase</h3><strong>92%</strong></div>
+            <span><i style="width: 92%"></i></span>
           </article>
         </div>
       </section>
@@ -220,28 +194,36 @@
         <div class="section-title centered">
           <p>Certifications</p>
           <h2>Oracle NetSuite Certified</h2>
-          <span>Verified learning across AI, reporting, financial workflows, and React Native development</span>
+          <span>Verified technical mastery across enterprise modules and cross-platform apps</span>
         </div>
         <div class="certificate-grid">
           <article class="certificate-card">
-            <img src="assets/cert-ai-foundations.png" alt="Oracle NetSuite AI Foundations Associate certificate badge" />
+            <div class="cert-icon-wrapper">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
             <h3>AI Foundations</h3>
             <p>Oracle NetSuite Certified Associate</p>
           </article>
           <article class="certificate-card">
-            <img src="assets/cert-bi-reporting.png" alt="Oracle NetSuite BI and Reporting Associate certificate badge" />
+            <div class="cert-icon-wrapper">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.5"><path d="M21.21 15.89A10 10 0 1 1 8 2.83M22 12A10 10 0 0 0 12 2v10z"/></svg>
+            </div>
             <h3>BI and Reporting</h3>
             <p>Oracle NetSuite Certified Associate</p>
           </article>
           <article class="certificate-card">
-            <img src="assets/cert-financial.png" alt="Oracle NetSuite Financial Associate certificate badge" />
-            <h3>Financial</h3>
+            <div class="cert-icon-wrapper">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3>Financial Workflows</h3>
             <p>Oracle NetSuite Certified Associate</p>
           </article>
-          <article class="certificate-card certificate-text">
-            <span>React Native</span>
-            <h3>React Native Development</h3>
-            <p>Hands-on mobile app development certification covering cross-platform app delivery.</p>
+          <article class="certificate-card premium-badge">
+            <div class="cert-icon-wrapper">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>React Native Expert</h3>
+            <p>Advanced Mobile Engineering Delivery Certification</p>
           </article>
         </div>
       </section>
@@ -250,70 +232,36 @@
         <div class="section-title centered">
           <p>Experience</p>
           <h2>Career Journey</h2>
-          <span>5 years of building mobile and ERP experiences</span>
+          <span>5 years of building architecture for global tech nodes</span>
         </div>
         <div class="journey">
-          <article>
-            <div><span>Current</span><strong>Nov 2025 - Present</strong></div>
-            <h3>React Native Developer & NetSuite Developer</h3>
-            <p>Ignitive Software Labs</p>
+          <article class="journey-node">
+            <div class="journey-meta"><span class="current-tag">Current</span><strong>Nov 2025 - Present</strong></div>
+            <h3>React Native & NetSuite Developer</h3>
+            <p class="company-name">Ignitive Software Labs</p>
             <ul>
               <li>Developed AI-powered, optimized Android and iOS apps using React Native.</li>
               <li>Used Fabric, TurboModules, secure auth, deep linking, payments, and push notifications.</li>
               <li>Managed CI/CD pipelines, automated testing, and store releases.</li>
             </ul>
           </article>
-          <article>
-            <div><strong>Oct 2024 - Oct 2025</strong></div>
+          <article class="journey-node">
+            <div class="journey-meta"><strong>Oct 2024 - Oct 2025</strong></div>
             <h3>NetSuite Technical Consultant</h3>
-            <p>Prateek Technosoft India Pvt Ltd</p>
+            <p class="company-name">Prateek Technosoft India Pvt Ltd</p>
             <ul>
               <li>Built SuiteScript 2.x modules, Suitelets, workflows, and transaction validations.</li>
               <li>Created banking integrations, EFT automation, reconciliation, O2C, and P2P workflows.</li>
             </ul>
           </article>
-          <article>
-            <div><strong>May 2022 - Nov 2023</strong></div>
+          <article class="journey-node">
+            <div class="journey-meta"><strong>May 2022 - Nov 2023</strong></div>
             <h3>React Native Developer</h3>
-            <p>OneRoof Technologies LLP</p>
+            <p class="company-name">OneRoof Technologies LLP</p>
             <ul>
               <li>Delivered apps with maps, chat, authentication, Redux, notifications, cart, and checkout.</li>
               <li>Built reusable UI components and optimized performance across mobile products.</li>
             </ul>
-          </article>
-          <article>
-            <div><strong>Jul 2020 - May 2022</strong></div>
-            <h3>React Native Developer</h3>
-            <p>Techsolvo LLP and Dollop Infotech</p>
-            <ul>
-              <li>Built cross-platform apps, native Android modules, offline caching, and Firebase releases.</li>
-              <li>Integrated payments, live tracking, chat, and multimedia experiences.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section case-studies reveal" id="case-studies">
-        <div class="section-title centered">
-          <p>Case Studies</p>
-          <h2>How I Solve Problems</h2>
-          <span>Problem, approach, and outcome from real project work</span>
-        </div>
-        <div class="case-grid">
-          <article>
-            <span>Human Capital Management</span>
-            <h3>HcMate</h3>
-            <p>Built an HCM workspace for leave, document requests, attendance, multi-level approvals, real-time notifications, and persistent local state.</p>
-          </article>
-          <article>
-            <span>NetSuite ERP</span>
-            <h3>PharmaOps ERP</h3>
-            <p>Automated regulatory inventory checks, batch validation, transaction controls, and financial process integrity for pharmaceutical operations.</p>
-          </article>
-          <article>
-            <span>B2B Mobile</span>
-            <h3>Shivangi TMT</h3>
-            <p>Created a responsive product catalog and inquiry workflow with optimized heavy-list rendering for distributor access.</p>
           </article>
         </div>
       </section>
@@ -322,68 +270,120 @@
         <div class="section-title centered">
           <p>Projects</p>
           <h2>Things I've Built</h2>
-          <span>Production apps and ERP solutions across mobile, commerce, and enterprise domains</span>
-        </div>
-        <div class="filters" aria-label="Project filters">
-          <button class="filter active" type="button" data-filter="all">All</button>
-          <button class="filter" type="button" data-filter="mobile">Mobile</button>
-          <button class="filter" type="button" data-filter="erp">ERP</button>
-          <button class="filter" type="button" data-filter="commerce">Commerce</button>
+          <span>Production apps and integrated ERP systems across global environments</span>
         </div>
         <div class="project-grid">
-          <article class="project-card" data-category="mobile"><span>React Native</span><h3>HcMate</h3><p>SuiteHCM integrated mobile workspace for employee and manager operations.</p></article>
-          <article class="project-card" data-category="mobile"><span>B2B Mobile</span><h3>Shivangi TMT</h3><p>Product catalog and inquiry system for a steel bar manufacturer.</p></article>
-          <article class="project-card" data-category="erp"><span>NetSuite ERP</span><h3>PharmaOps ERP</h3><p>SuiteScript modules for inventory, batch tracking, and transaction controls.</p></article>
-          <article class="project-card" data-category="commerce"><span>E-commerce</span><h3>Rudraksha Ratna</h3><p>React UI components, filters, payment flows, and checkout funnels.</p></article>
-          <article class="project-card" data-category="mobile"><span>Real-time</span><h3>Apex Match</h3><p>WebSocket chat, notifications, matching workflows, and resource allocation.</p></article>
-          <article class="project-card" data-category="mobile"><span>Maps & IoT</span><h3>Kwick Charger</h3><p>Google Maps tracking, payments, and EV charging session features.</p></article>
-          <article class="project-card" data-category="commerce"><span>Marketplace</span><h3>Global Super Market</h3><p>Grocery delivery with product lists, local caching, and inventory sync.</p></article>
-          <article class="project-card" data-category="mobile"><span>EdTech</span><h3>EduAcademy</h3><p>Streaming, offline downloads, quizzes, and course progress tracking.</p></article>
-          <article class="project-card" data-category="mobile"><span>Enterprise</span><h3>EmpMonitor Mobile</h3><p>Background telemetry, productivity dashboards, and Crashlytics monitoring.</p></article>
+          <article class="project-card">
+            <div class="project-header"><span>React Native Matrix</span></div>
+            <h3>HcMate Mobile Workspace</h3>
+            <p>SuiteHCM integrated workspace featuring leave modules, multi-level structural approvals, and persistent offline storage mechanisms.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-header"><span>Enterprise ERP</span></div>
+            <h3>PharmaOps Architecture</h3>
+            <p>SuiteScript 2.x engines deployed for asset compliance tracking, automated validation protocols, and systemic security verification.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-header"><span>IoT & Geospatial</span></div>
+            <h3>Kwick Charger Node</h3>
+            <p>Cross-platform application built using integrated Mapbox navigation layers, reactive payment pathways, and socket states.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-header"><span>Real-time Sync</span></div>
+            <h3>Apex Core Delivery</h3>
+            <p>WebSockets infrastructure handling concurrent chat channels, real-time dispatch updates, and multi-tenant resource orchestration.</p>
+          </article>
         </div>
       </section>
 
       <section class="section contact reveal" id="contact">
         <div class="section-title centered">
-          <p>Contact</p>
+          <p>Contact Hub</p>
           <h2>Let's Connect</h2>
-          <span>Have a mobile app, ERP workflow, or integration challenge?</span>
+          <span>Choose your preferred channel below to establish communication vectors</span>
         </div>
-        <div class="contact-grid">
-          <form class="contact-form" id="contact-form">
-            <label>Name <input name="name" placeholder="Your name" required /></label>
-            <label>Email <input name="email" type="email" placeholder="your@email.com" required /></label>
-            <label>Subject <input name="subject" placeholder="Project inquiry" /></label>
-            <label>Message <textarea name="message" placeholder="Tell me about your project" required></textarea></label>
-            <button class="button primary" type="submit">Send Message</button>
-          </form>
-          <div class="contact-cards">
-            <article><span>Email</span><a href="mailto:subhis9009@gmail.com">Mail</a></article>
-            <article><span>Phone</span><a href="tel:7987971008">Call</a></article>
-            <article><span>LinkedIn</span><a href="https://www.linkedin.com/in/surbhi-sharma-930440177" target="_blank" rel="noreferrer">linkedin.com/in/surbhi-sharma-930440177</a></article>
-            <article><span>Work Mode</span><strong>Full-time, Remote & Hybrid</strong></article>
-          </div>
+        <div class="contact-grid-hub">
+          <a href="mailto:subhis9009@gmail.com" class="hub-card mail-hub">
+            <div class="hub-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <div class="hub-copy">
+              <span>Send An Email</span>
+              <strong>subhis9009@gmail.com</strong>
+            </div>
+            <div class="hub-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <a href="tel:7987971008" class="hub-card call-hub">
+            <div class="hub-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="hub-copy">
+              <span>Voice Connection</span>
+              <strong>7987971008</strong>
+            </div>
+            <div class="hub-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/surbhi-sharma-930440177" target="_blank" rel="noreferrer" class="hub-card linkedin-hub">
+            <div class="hub-icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="hub-copy">
+              <span>Professional Mesh</span>
+              <strong>LinkedIn Profile</strong>
+            </div>
+            <div class="hub-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
+      <div class="footer-content">
         <span class="brand-mark">SS</span>
-        <p>Surbhi Sharma</p>
-        <small>React Native Developer • NetSuite Developer</small>
+        <p class="footer-name">Surbhi Sharma</p>
+        <small>React Native Framework Specialist • NetSuite Solutions Architect</small>
       </div>
-      <nav aria-label="Footer navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certificates</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p>© 2026 Surbhi Sharma. Built as a resume-based portfolio.</p>
+      <p class="copyright">© 2026 Surbhi Sharma. All rights reserved. Precision Designed Layout.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Scroll Reveal Mechanics
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(section => {
+          observer.observe(section);
+        });
+
+        // Mobile Dropdown Core
+        const toggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.site-nav');
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+        });
+
+        // Smooth Viewport Anchoring for Mobile Links
+        document.querySelectorAll('.site-nav a').forEach(link => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('open');
+          });
+        });
+      });
+    </script>
   </body>
 </html>
