@@ -7,6 +7,7 @@ const skillTabs = document.querySelectorAll(".skill-tab");
 const skillCards = document.querySelectorAll(".skill-meter");
 const revealItems = document.querySelectorAll(".reveal");
 const roleLine = document.querySelector(".role-line");
+const contactForm = document.querySelector("#contact-form");
 
 navToggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
@@ -101,3 +102,23 @@ if (roleLine) {
     }
   }, deleting ? 80 : 110);
 }
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(contactForm);
+  const name = formData.get("name") || "";
+  const email = formData.get("email") || "";
+  const subject = formData.get("subject") || "Portfolio inquiry";
+  const message = formData.get("message") || "";
+
+  const body = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    "",
+    "Message:",
+    message,
+  ].join("\n");
+
+  window.location.href = `mailto:subhis9009@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
