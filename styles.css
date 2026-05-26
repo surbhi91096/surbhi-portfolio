@@ -339,13 +339,13 @@ h1 span:last-child {
     radial-gradient(circle at 70% 32%, rgba(255, 110, 199, 0.18), transparent 32%);
   animation: floatPanel 6s ease-in-out infinite;
 }
-
 .profile-card {
   position: absolute;
-  inset: 34px;
+  inset: 74px;
   display: grid;
   place-items: center;
-  padding: 12px;
+  align-content: center;
+  gap: 10px;
   border: 1px solid rgba(94, 231, 255, 0.28);
   border-radius: 30px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.025));
